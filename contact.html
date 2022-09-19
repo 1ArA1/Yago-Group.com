@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>YAGO-Group.com</title>
+		<!-- ======= CDN-JS =======-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- ======= CSS =======-->
+		<link rel="stylesheet" type="text/css" href="CSS\contact.css">
+		
+	</head>
+	<body>
+
+		<!--	===== BAckground Slide Animation AND NavBar =====	-->
+
+		<div class="background">
+			<div class="slider">
+				<!-- <img src="./img/Slider/img01.jpg" id="slideImg"> -->
+			</div>
+			<div class="overlay">
+				<nav class="navbar">
+					<h1 class="logo"><a href="index.html">Y<span>A</span>GO</a></h1> 
+					<ul class="nav-menu">
+
+						<li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+
+						<li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
+
+						<li class="nav-item"><a href="project.html"class="nav-link">PROJECTS</a></li>
+
+						<li class="nav-item"><a href="contact.html"class="nav-link" id="active">CONTACT</a></li>
+
+					</ul>
+					<div class="hamburger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+			<!-- =============== Main Content ==================  -->
+	
+		<div class="header-content">	
+			<div class="yagoimg"><img src="./img/YAGO.png"></div>
+			<h1>CONTACT US</h1>
+			<div class="line"></div>		
+		</div>
+
+		<section class="contact">
+
+		<div class="row">
+			<div class="contact-col">
+				<div>
+					<i class="fa fa-home"></i>
+					<span>
+						<h5>3 Mamostayan Street</h5>
+						<P>Sulemaniyah- Iraq</P>
+					</span>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<span>
+						<h5>+694 770 000 0000</h5>
+						<P>Saturday to Thursday</P>
+					</span>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope-o"></i>
+					<span>
+						<h5>info@gmail.com</h5>
+						<P>E-MAIL</P>
+					</span>
+				</div>
+
+			</div>
+			<div class="contact-col"></div>
+			</div>
+		</div>
+
+
+
+		</section>
+			
+		
+
+		
+		
+
+		<!-- ========   map Section   ========-->
+
+		<section class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12982.588733873707!2d45.4370591!3d35.5624148!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc67be5f13b2b2e51!2sYAGO%20Group!5e0!3m2!1sen!2siq!4v1660917102109!5m2!1sen!2siq" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			
+		</section>
+
+		<!--    JavaScript    -->
+
+		
+	
+		
+		<script>
+
+			const hamburger = document.querySelector(".hamburger");
+			const navMenu = document.querySelector(".nav-menu");
+
+			hamburger.addEventListener ("click", () => {
+				hamburger.classList.toggle("active");
+				navMenu.classList.toggle("active");
+			})
+
+			document.querySelectorAll(".nav-link").forEach(n =>
+			n.addEventListener("click", () => {
+				hamburger.classList.remove("active")
+				navMenu.classList.remove("active")
+			}) )
+
+		</script>
+
+		<script>
+
+			const yagoimg = document.querySelector(".yagoimg");
+
+				yagoimg.addEventListener ("click",() => {
+					yagoimg.classList.toggle("active") ;
+				})
+
+		</script>
+
+		<!-- ========   Footer Section   ========-->
+		
+		
+		<footer>
+			<div class="footer-content">
+				<ul class="social">
+					<li id="active"><a href="#"></a><i class="fa fa-facebook"></i></li>
+					<li id="active"><a href="#"></a><i class="fa fa-twitter"></i></li>
+					<li id="active"><a href="#"></a><i class="fa fa-instagram"></i></li>
+				</ul>
+				<ul class="nav-menu-btm">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="project.html">PROJECTS</a></li>
+					<li><a href="contact.html"id="active">CONTACT</a></li>
+				</ul>
+				<h3>YAGO GROUP</h3>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, beatae voluptatibus quisquam </p>
+			</div>
+			<div class="navbar-btm">
+				
+			</div>
+			<div class="footerbottom">
+				<p>@ 2022 Yago Group For Investment | All Right Reserved</p>
+			</div>
+		</footer>
+
+
+
+
+	</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>YAGO-Group.com</title>
+		<!-- ======= CDN-JS =======-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- ======= CSS =======-->
+		<link rel="stylesheet" type="text/css" href="CSS\main.css">
+		
+	</head>
+	<body onload="slider()">
+
+		<!--	===== BAckground Slide Animation AND NavBar =====	-->
+
+		<div class="background">
+			<div class="slider">
+				<img src="./img/Slider/img01.jpg" id="slideImg">
+			</div>
+			<div class="overlay">
+				<nav class="navbar">
+					<h1 class="logo"><a href="index.html">Y<span>A</span>GO</a></h1> 
+					<ul class="nav-menu">
+
+						<li class="nav-item"><a href="index.html" class="nav-link" id="active">HOME</a></li>
+
+						<li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
+
+						<li class="nav-item"><a href="project.html"class="nav-link">PROJECTS</a></li>
+
+						<li class="nav-item"><a href="contact.html"class="nav-link">CONTACT</a></li>
+
+					</ul>
+					<div class="hamburger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+				</nav>
+			</div>
+			
+			<div class="header-content">
+				<h2>Y<span>A</span>GO <span>G</span>ROUP</h2>
+				<div class="line"></div>
+				<h1>For Investment in IRAQ</h1>
+				<a href="project.html" class="button">Our Investment</a>
+			</div>
+		</div>
+
+		
+		
+
+		<!-- ========   Mini-Project Section   ========-->
+
+		<section class="projects">
+			<div class="title">
+				<h1>Our Projects</h1>
+				<div class="line2"></div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<img src="./img/project01.jpg" alt="project01">
+					<h4>Project Name </h4>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sunt rem aut numquam nihil</p>
+					
+
+				</div>
+
+
+				<div class="col">
+					<img src="./img/project02.jpg" alt="project02">
+					<h4>Project Name </h4>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sunt rem aut numquam nihil</p>
+				</div>
+
+				
+				
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<img src="./img/project01.jpg" alt="project01">
+					<h4>Project Name </h4>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sunt rem aut numquam nihil</p>
+					
+
+				</div>
+
+
+				<div class="col">
+					<img src="./img/project02.jpg" alt="project02">
+					<h4>Project Name </h4>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sunt rem aut numquam nihil</p>
+				</div>
+				
+				
+			</div>
+
+			
+
+			
+		</section>
+
+		<!--    JavaScript    -->
+
+		
+		<script>
+			var slideImg = document.getElementById("slideImg") ;
+
+			var images = new Array(
+					"./img/Slider/img01.jpg",
+					"./img/Slider/img02.jpg",
+					"./img/Slider/img03.jpg",
+					"./img/Slider/img01.jpg"
+				);
+
+			var len = images.length;
+			var i = 0; 
+
+			function slider(){
+				if(i > len-1){
+					i = 0;
+				}
+				slideImg.src = images[i]
+				i++ ;
+				setTimeout("slider()",3000)
+			}
+
+		</script>
+		
+		<script>
+
+			const hamburger = document.querySelector(".hamburger");
+			const navMenu = document.querySelector(".nav-menu");
+
+			hamburger.addEventListener ("click", () => {
+				hamburger.classList.toggle("active");
+				navMenu.classList.toggle("active");
+			})
+
+			document.querySelectorAll(".nav-link").forEach(n =>
+			n.addEventListener("click", () => {
+				hamburger.classList.remove("active")
+				navMenu.classList.remove("active")
+			}) )
+
+		</script>
+
+		<!-- ========   Footer Section   ========-->
+		
+		
+		<footer>
+			<div class="footer-content">
+				<ul class="social">
+					<li id="active" ><a href="#"></a><i class="fa fa-facebook"></i></li>
+					<li id="active"><a href="#"></a><i class="fa fa-twitter"></i></li>
+					<li id="active"><a href="#"></a><i class="fa fa-instagram"></i></li>
+				</ul>
+				<ul class="nav-menu-btm">
+					<li><a href="index.html" id="active">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="project.html">PROJECTS</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+				<h3>YAGO GROUP</h3>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, beatae voluptatibus quisquam </p>
+			</div>
+			<div class="navbar-btm">
+				
+			</div>
+			<div class="footerbottom">
+				<p>@ 2022 Yago Group For Investment | All Right Reserved</p>
+			</div>
+		</footer>
+
+
+
+
+	</body>
+</html>

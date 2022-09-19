@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>YAGO-Group.com</title>
+		<!-- ======= CDN-JS =======-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- ======= CSS =======-->
+		<link rel="stylesheet" type="text/css" href="CSS/project.css">
+		
+	</head>
+	<body>
+
+		<!--	===== BAckground Slide Animation AND NavBar =====	-->
+
+		<div class="background">
+			<div class="slider">
+				<!-- <img src="./img/Slider/img01.jpg" id="slideImg"> -->
+			</div>
+			<div class="overlay">
+				<nav class="navbar">
+					<h1 class="logo"><a href="index.html">Y<span>A</span>GO</a></h1> 
+					<ul class="nav-menu">
+
+						<li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+
+						<li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
+
+						<li class="nav-item"><a href="project.html"class="nav-link" id="active">PROJECTS</a></li>
+
+						<li class="nav-item"><a href="contact.html"class="nav-link">CONTACT</a></li>
+					</ul>
+					<div class="hamburger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+			<!-- =============== Main Content ==================  -->
+	
+		<div class="header-content">	
+			<div class="yagoimg"><img src="./img/YAGO.png"></div>
+			<h1>PROJECTS</h1>
+			<div class="line"></div>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo similique provident, perspiciatis debitis possimus commodi accusamus cupiditate temporibus aut obcaecati magni voluptatibus minima quam vero explicabo, nisi repellendus aspernatur officia aliquam tempore quae! Harum optio, recusandae laudantium corporis sequi temporibus id dicta, ea debitis et inventore quos enim facere qui accusamus tempora sapiente quia animi eum nostrum iusto illum totam?</p>
+		</div>
+			
+		
+
+		
+		
+
+		<!-- ========   chart Section   ========-->
+
+		<section class="chart">
+			
+			
+		</section>
+
+		<!--    JavaScript    -->
+
+		
+	
+		
+		<script>
+
+			const hamburger = document.querySelector(".hamburger");
+			const navMenu = document.querySelector(".nav-menu");
+
+			hamburger.addEventListener ("click", () => {
+				hamburger.classList.toggle("active");
+				navMenu.classList.toggle("active");
+			})
+
+			document.querySelectorAll(".nav-link").forEach(n =>
+			n.addEventListener("click", () => {
+				hamburger.classList.remove("active")
+				navMenu.classList.remove("active")
+			}) )
+
+		</script>
+
+		<script>
+
+			const yagoimg = document.querySelector(".yagoimg");
+
+				yagoimg.addEventListener ("click",() => {
+					yagoimg.classList.toggle("active") ;
+				})
+
+		</script>
+
+		<!-- ========   Footer Section   ========-->
+		
+		
+		<footer>
+			<div class="footer-content">
+				<ul class="social">
+					<li id="active"><a href="#"></a><i class="fa fa-facebook"></i></li>
+					<li id="active"><a href="#"></a><i class="fa fa-twitter"></i></li>
+					<li id="active"><a href="#"></a><i class="fa fa-instagram"></i></li>
+				</ul>
+				<ul class="nav-menu-btm">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="project.html"id="active">PROJECTS</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+				<h3>YAGO GROUP</h3>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, beatae voluptatibus quisquam </p>
+			</div>
+			<div class="navbar-btm">
+				
+			</div>
+			<div class="footerbottom">
+				<p>@ 2022 Yago Group For Investment | All Right Reserved</p>
+			</div>
+		</footer>
+
+
+
+
+	</body>
+</html>
